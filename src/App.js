@@ -46,7 +46,6 @@ export default class App extends React.Component  {
   }
   
   onChangeSelect = (event) => {
-    debugger
     if (event.target.value === 'true') {
       this.setState({ crescente: true  })
     } else {
