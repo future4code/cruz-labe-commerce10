@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Filter from './Components/Filter';
+import Filter from './components/Filter';
 
 function App() {
   return (
