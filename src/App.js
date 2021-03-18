@@ -1,6 +1,7 @@
 import React from 'react';
 import Produtos from './components/Produtos/Produtos';
 import './App.css';
+import Filter from './components/Filter';
 import styled from 'styled-components';
 
 const GridPrincipal = styled.div`
@@ -55,6 +56,7 @@ export default class App extends React.Component  {
 
   render() {
     return (<GridPrincipal>
+            <Filter />
       <DivProdutos>
         <Produtos estado = {this.state} produtos={this.state.produtos} crescente={this.state.crescente} onChangeSelect={this.onChangeSelect}/>
       </DivProdutos>
@@ -62,4 +64,5 @@ export default class App extends React.Component  {
     );
   }
   }
+
 
