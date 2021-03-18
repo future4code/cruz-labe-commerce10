@@ -5,11 +5,14 @@ const FilterContainer = styled.div`
 display: flex;
 flex-direction: column;
 padding-left: 10px;
+/* padding-right: 50px; */
 margin-top: 10px;
-margin-right: 10px;
+/* margin-right: 720px; */
+margin-left: 10px;
 border: 1px solid black;
 align-items: flex-start;  
-height: 90vh;  
+height: 90vh;
+width: 29vh; 
 & > input {        
 margin-bottom: 10px;   
  }`
