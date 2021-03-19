@@ -34,35 +34,33 @@ margin-bottom: 10px;
 
 
 export default class Filter extends React.Component {
- state = {
-     valorInputMax: "",
-     valorInputMin: "",
-     valorInputNome: ""
+//  state = {
+//      valorInputMax: "",
+//      valorInputMin: "",
+//      valorInputNome: ""
+//  } 
 
- } 
+//  onChangeInputMax = (event) => {
+//     this.setState({valorInputMax: this.event.target.value})
+//  }
 
- onChangeInputMax = (event) => {
-    this.setState({valorInputMax: this.event.target.value})
+//  onChangeInputMin = (event) => {
+//     this.setState({valorInputMin: this.event.target.value})
+//  }
 
- }
-
- onChangeInputMin = (event) => {
-    this.setState({valorInputMin: this.event.target.value})
- }
-
- onChangeInputNome = (event) => {
-     this.setState({valorInputNome: this.event.target.value})
- }
+//  onChangeInputNome = (event) => {
+//      this.setState({valorInputNome: this.event.target.value})
+//  }
 
  render () {
      return ( <FilterContainer>
       <h3>{"Filtros"}</h3>  
       <label>{"Valor máximo:"}</label>
-      <input type="number" value={this.state.valorInputMax} onChange={this.onChangeInputMax}/> 
+      <input type="number" value={this.props.valorInputMax} onChange={this.props.onChangeInputMax}/> 
       <label>{"Valor mínimo:"}</label>               
-      <input type="number"  value={this.state.valorInputMin} onChange={this.onChangeInputMin}/>
+      <input type="number"  value={this.props.valorInputMin} onChange={this.props.onChangeInputMin}/>
       <label>{"Busca por nome:"}</label>               
-      <input type="text" value={this.state.valorInputNome} onChange={this.onChangeInputNome} />
+      <input type="text" value={this.props.valorInputNome} onChange={this.props.onChangeInputNome} />
      </FilterContainer>
      )
 
