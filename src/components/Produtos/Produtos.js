@@ -22,12 +22,7 @@ const GridProdutos = styled.div`
 
 export default class Produtos extends React.Component {                   
 
-    render() {        
-        
-        console.log(this.props.crescente)
-
-        
-
+    render() {               
         const ordem = () => {
             let listaProdutos = [...this.props.produtos]   
             if (this.props.crescente === true) {
