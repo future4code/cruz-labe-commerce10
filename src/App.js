@@ -3,6 +3,33 @@ import Produtos from './components/Produtos/Produtos';
 import './App.css';
 import Filter from './components/Filter';
 import styled from 'styled-components';
+import Cart from './Components/Cart/Cart';      
+
+// Parte da Noelly
+/*
+export default class App extends React.Component {
+
+    addProdutoCart = (produtoId) => {
+        const produtoCart = this.state.produtoCart.find(produtos => produtoId === produtos.id)
+
+        if (produtosid) {
+            const produtoAdicionado = this.state.produtoCart.map(produtos => {
+                if (produtoId === produto.id) {
+                    return
+                    ...produtos,
+                quantidade: produto.quantidade + 1
+        
+                    
+    }
+    }
+       return produtos
+        })
+        this.setState({produtoCart: produtoAdicionado})
+    }else{
+        const indoParaCarrinho = produtos.find(produtos => produtosId === produtos.id)
+        const produtoAdicionado = 
+    }
+*/
 
 const GridPrincipal = styled.div`
     display: grid;
@@ -74,7 +101,31 @@ export default class App extends React.Component  {
     valorInputMin: '',
     valorInputNome: ""
   }
-  
+
+// Começo parte Noelly
+addProdutoCart = (produtoId) => {
+        const produtoCart = this.state.produtoCart.find(produtos => produtoId === produtos.id)
+
+        if (produtosid) {
+            const produtoAdicionado = this.state.produtoCart.map(produtos => {
+                if (produtoId === produto.id) {
+                    return
+                    ...produtos,
+                quantidade: produto.quantidade + 1
+        
+                    
+    }
+    }
+       return produtos
+        })
+        this.setState({produtoCart: produtoAdicionado})
+    }else{
+        const indoParaCarrinho = produtos.find(produtos => produtosId === produtos.id)
+        const produtoAdicionado = 
+    }
+
+// Fim parte Noelly
+        
 onChangeSelect = (event) => {
     if (event.target.value === 'true') {
       this.setState({ crescente: true  })
@@ -82,7 +133,8 @@ onChangeSelect = (event) => {
       this.setState({ crescente: false  })
     }
 }
-  
+
+
 onChangeInputMax = (event) => {
       this.setState({valorInputMax: event.target.value})
       const filtrada = filtragem.filter((produto)=>{
@@ -129,5 +181,6 @@ this.setState({ produtos: filtrada})
     );
   }
   }
+
 
 
