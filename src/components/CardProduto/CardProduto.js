@@ -29,7 +29,7 @@ export default class CardProduto extends React.Component {
                 <p className="title">{this.props.titulo}</p>
                 <p className="price">R${this.props.preco},00</p>
             </DivTextos>
-            <button onClick='adicionaCarrinho'>Adicionar ao carrinho</button>
+            <button onClick={()=>this.props.adicionarCarrinho(this.props.id)}>Adicionar ao carrinho</button>
         </ContainerCard>
     }
 }

@@ -4,6 +4,7 @@ import CardProduto from '../CardProduto/CardProduto';
 
 
 
+
 const FlexDeCima = styled.div`
     display:flex;
     align-items: center;
@@ -39,6 +40,9 @@ export default class Produtos extends React.Component {
                             imagem={produto.imagem}
                             titulo={produto.nome}
                             preco={produto.preco}
+                            adicionarCarrinho={this.props.adicionarCarrinho}
+                            id={produto.id}
+                           
                         />
         })
         // onChange = {onChangeSelect()}
